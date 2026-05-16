@@ -13,3 +13,20 @@ int main()
         "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-",
         "..-", "...-", ".--", "-..-", "-.--", "--.."
     };
+
+ string message, fullMorse = "";
+
+    cout << "Enter a message: ";
+    getline(cin, message);
+
+    cout << "\nMorse code for each letter:" << endl;
+
+    for (int i = 0; i < message.length(); i++)
+    {
+        char letter = toupper(message[i]);
+
+        if (letter == ' ')
+        {
+            fullMorse += " "; // space between words
+            continue;
+        }
