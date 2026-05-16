@@ -30,3 +30,16 @@ int main()
             fullMorse += " "; // space between words
             continue;
         }
+        if (letter >= 'A' && Letter <= 'Z')
+        {
+            string code = morseCode[letter - 'A'];
+            cout << letter << ": " << code << endl;
+        }
+    }
+
+    cout << "\nFull Morse code message:" << endl;
+    cout << fullMorse << endl;
+
+    return 0;
+
+}
